@@ -1,0 +1,21 @@
+[
+    {
+      "image": "https://i.ibb.co/JvGZgZC/Therapist-1.jpg",
+      "expertise": "Nutritionist",
+      "email": "nutritionist@example.com",
+      "name": "Dr. Emily Smith"
+    },
+    {
+      "image": "https://i.ibb.co/1ZKs4QW/Nutritionist.jpg",
+      "expertise": "Physical Therapist",
+      "email": "physicaltherapist@example.com",
+      "name": "John Davis, PT"
+    },
+    {
+      "image": "https://i.ibb.co/6F18qNJ/phy.jpg",
+      "expertise": "Psychologist",
+      "email": "psychologist@example.com",
+      "name": "Dr. Sarah Johnson, PsyD"
+    }
+  ]
+  

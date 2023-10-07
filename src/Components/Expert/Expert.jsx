@@ -6,7 +6,7 @@ const Expert = () => {
         <h1 className='text-center text-5xl font-bold font-Poppins mb-10'>Our Experts</h1>
             <div className='gap-20 flex flex-col md:flex-row  justify-center items-center'>
             <div>
-                <div className="card w-96  shadow-xl bg-">
+                <div className="card w-full md:h-[500px] shadow-xl bg-">
                     <figure><img className='' src="https://i.ibb.co/JvGZgZC/Therapist-1.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title"> Nutritionist!</h2>
@@ -18,7 +18,7 @@ const Expert = () => {
                 </div>
             </div>
             <div >
-                <div className="card w-96  shadow-xl bg-">
+                <div className="card w-full h-[500px] shadow-xl bg-">
                     <figure><img className='' src="https://i.ibb.co/1ZKs4QW/Nutritionist.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title"> Physical Therapist!</h2>
@@ -30,7 +30,7 @@ const Expert = () => {
                 </div>
             </div>
             <div >
-                <div className="card w-96  shadow-xl bg-">
+                <div className="card w-full h-[500px] shadow-xl bg-">
                     <figure><img className='' src="https://i.ibb.co/hWGXt4k/Psychologist.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title"> Psychologist!</h2>

@@ -13,7 +13,7 @@ const Banner = () => {
                     we are helping hundreds of businesses to open their business while providing <br /> a safe environment thru our Virtual and On-Site, Health & Wellness Events.
                 </span>
             </div>
-            <img className='absolute top-[417px] md:top-[726px] ' src="../../../images/wave.svg" alt="" />
+            <img className='absolute top-[610px] md:top-[726px] ' src="../../../images/wave.svg" alt="" />
             {/* <div className='md: md:ml-52 text-white'>
 
                

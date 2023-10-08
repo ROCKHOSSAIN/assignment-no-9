@@ -66,7 +66,7 @@ const Login = () => {
                     {
                         error && <p className='text-red-500 text-xl font-bold'>{error}</p>
                     }
-                    <p className="italic font-medium mt-5 text-black">Dont have an account?<Link to='/register' className="text-black font-bold text-base ml-5"> Register</Link></p>
+                    <p className="italic font-medium mt-5 text-black">Do not have an account?<Link to='/register' className="text-black font-bold text-base ml-5"> Register</Link></p>
                     <div className="form-control mt-6">
                         <button className="py-3 rounded-md bg-sky-600 text-white">Login</button>
                     </div>

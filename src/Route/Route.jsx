@@ -5,10 +5,13 @@ import Mainlayout from "../Components/Mainlayout";
 import Errorpage from "../Pages/Errorpage/Errorpage";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
-import Blog from "../Pages/Blog/Blog";
+// import Blog from "../Pages/Blog/Blog";
 import Favourite from "../Pages/Favourite/Favourite";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import BlogCards from "../Pages/Blog/BlogCards";
+import Event from "../Pages/Blog/Event";
+import Dashboard from "../Pages/Dashboard/Dashboard";
   
   const FairRoute = createBrowserRouter([
     {
@@ -26,10 +29,20 @@ import Register from "../Pages/Register/Register";
         },
         {
             path:'/blog',
-            element:<Blog></Blog>
+            element:<Event></Event>
+        },
+        {
+            path:'/dashboard',
+            element:<Dashboard></Dashboard>
+        },
+        {
+            path:'/blog/:id',
+            loader:()=>fetch('/healthfairData.json'),
+            element:<BlogCards></BlogCards>
         },
         {
             path:'/favourite',
+            loader:()=>fetch('/healthfairData.json'),
             element:<Favourite></Favourite>
         },
         {

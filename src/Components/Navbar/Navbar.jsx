@@ -11,10 +11,11 @@ const Navbar = () => {
     }
     const navlinks =
         <>
-            <li><NavLink to='/'>Home</NavLink> </li>
-            <li><NavLink to='/about'>About Us</NavLink> </li>
-            <li><NavLink to='/blog'>Blog</NavLink> </li>
-            <li><NavLink to='/favourite'>Favourite</NavLink> </li>
+            <li className='font-Poppins'><NavLink to='/'>Home</NavLink> </li>
+            <li className='font-Poppins'><NavLink to='/about'>About Us</NavLink> </li>
+            <li className='font-Poppins'><NavLink to='/blog'>Blog</NavLink> </li>
+            <li className='font-Poppins'><NavLink to='/favourite'>Bookmarks</NavLink> </li>
+            <li className='font-Poppins'><NavLink to='/dashboard'>Dashboard</NavLink> </li>
 
 
         </>

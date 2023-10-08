@@ -6,37 +6,37 @@ const Expert = () => {
         <h1 className='text-center text-5xl font-bold font-Poppins mb-10'>Our Experts</h1>
             <div className='gap-20 flex flex-col md:flex-row  justify-center items-center'>
             <div>
-                <div className="card w-full md:h-[500px] shadow-xl bg-">
-                    <figure><img className='' src="https://i.ibb.co/JvGZgZC/Therapist-1.jpg" alt="Shoes" /></figure>
+                <div className="card w-full  shadow-xl bg-">
+                    <figure><img className='h-[350px] ' src="https://i.ibb.co/JvGZgZC/Therapist-1.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
-                        <h2 className="card-title"> Nutritionist!</h2>
-                        <p>Dr. Emily Smith</p>
+                        <h2 className="card-title">Dr. Emily Smith </h2>
+                        <p className='font-Poppins'>Nutritionist!</p>
                         <div className="card-actions justify-end">
-                            <p className="">Email: nutritionist@gmail.com</p>
+                            <p className="font-medium font-Poppins">Email: nutritionist@gmail.com</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div >
-                <div className="card w-full h-[500px] shadow-xl bg-">
-                    <figure><img className='' src="https://i.ibb.co/1ZKs4QW/Nutritionist.jpg" alt="Shoes" /></figure>
+                <div className="card w-full  shadow-xl bg-">
+                    <figure><img className='h-[350px] ' src="https://i.ibb.co/1ZKs4QW/Nutritionist.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
-                        <h2 className="card-title"> Physical Therapist!</h2>
-                        <p>Dr. John Davis, PT</p>
+                        <h2 className="card-title">Dr. John Davis, PT</h2>
+                        <p className='font-Poppins'> Physical Therapist!</p>
                         <div className="card-actions justify-end">
-                            <p className="">Email: physicaltherapist@gmail.com</p>
+                            <p className="font-medium font-Poppins">Email: physicaltherapist@gmail.com</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div >
-                <div className="card w-full h-[500px] shadow-xl bg-">
-                    <figure><img className='' src="https://i.ibb.co/hWGXt4k/Psychologist.jpg" alt="Shoes" /></figure>
+                <div className="card w-full shadow-xl bg-">
+                    <figure><img className='h-[350px] ' src="https://i.ibb.co/hWGXt4k/Psychologist.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
-                        <h2 className="card-title"> Psychologist!</h2>
-                        <p>Dr. Watson</p>
+                        <h2 className="card-title"> Dr. Watson!</h2>
+                        <p className='font-Poppins'>Psychologist!</p>
                         <div className="card-actions justify-end">
-                            <p className="">Email: psychologist@gmail.com</p>
+                            <p className="font-medium font-Poppins">Email: psychologist@gmail.com</p>
                         </div>
                     </div>
                 </div>

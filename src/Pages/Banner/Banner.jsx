@@ -10,7 +10,7 @@ const Banner = () => {
                 </h1>
                 <span className='font-Poppins '>
 
-                    we are helping hundreds of businesses to open their business while providing <br /> a safe environment thru our Virtual and On-Site, Health & Wellness Events.
+                    We are helping hundreds of businesses to open their business while providing <br /> a safe environment through our Virtual and On-Site, Health & Wellness Events.
                 </span>
             </div>
             <img className='absolute top-[610px] md:top-[726px] ' src="../../../images/wave.svg" alt="" />

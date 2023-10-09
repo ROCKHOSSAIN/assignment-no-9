@@ -100,7 +100,7 @@ const Register = () => {
                             name="password"
                             placeholder="Password" className="input input-bordered relative" required />
                         <div>
-                            <span onClick={() => setshowpassword(!showpassword)} className="absolute bottom-[182px] md:bottom-[390px] right-[40px] md:right-[620px]">
+                            <span onClick={() => setshowpassword(!showpassword)} className="absolute bottom-[32px] md:bottom-[390px] right-[40px] md:right-[620px]">
                                 {
                                     showpassword ? <HiEye></HiEye> : <HiEyeOff></HiEyeOff>
                                 }

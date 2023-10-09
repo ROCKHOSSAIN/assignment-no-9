@@ -4,7 +4,7 @@ const Packages = () => {
     return (
         <div className='container mx-auto mt-20'>
             <h1 className='text-6xl font-Poppins text-center mb-10'>Pac<span className='text-sky-500'>kages</span></h1>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-16'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 overflow-x-hidden'>
                 {/* 1st card */}
                 <div className="card w-full shadow-xl" data-aos="zoom-out-left"  data-aos-duration="1500">
                     <figure className='flex-col'>
@@ -85,7 +85,7 @@ const Packages = () => {
                     </div>
                 </div>
                 {/* 3rd card  */}
-                <div className="card w-full shadow-xl" data-aos="zoom-out-right"  data-aos-duration="1500">
+                <div className="card w-full shadow-xl" data-aos="zoom-out-down"  data-aos-duration="1500">
                     <figure className='flex-col'>
                         <h1 className='text-xl font-Squada'>Diamond Health</h1>
                         <br />

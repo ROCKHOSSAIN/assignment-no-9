@@ -32,9 +32,9 @@ const Dashboard = () => {
     return (
         <div >
             <Navbar></Navbar>
-            <div className="p-8" data-aos="zoom-out-down"  data-aos-duration="1500">
+            <div className="p-8 overflow-x-hidden">
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 "  data-aos="zoom-out-down"  data-aos-duration="1500">
                 {reviews.map((review, index) => (
                     <div key={index} className="p-4 border border-gray-200 rounded-lg shadow-md bg-white dark:bg-gray-800 dark:border-gray-700">
                         <div className="flex items-center justify-center mb-4">

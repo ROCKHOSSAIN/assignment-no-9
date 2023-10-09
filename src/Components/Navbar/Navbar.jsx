@@ -41,7 +41,7 @@ const Navbar = () => {
                                 {navlinks}
                             </ul>
                         </div>
-                        <img className='w-[160px] md:w-[220px]' src="../../../images/logo.png" alt="" />
+                        <img className='w-[160px] md:w-[220px]' src="https://i.ibb.co/ZGgdvdg/logo.png" alt="" />
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">

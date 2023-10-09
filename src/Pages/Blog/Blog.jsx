@@ -2,7 +2,7 @@ import { IoBookmarks } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Navbar from "../../Components/Navbar/Navbar";
+// import Navbar from "../../Components/Navbar/Navbar";
 // import { savebookmarks } from "../Favourite/localhost";
 const Blog = ({ blog }) => {
 
@@ -39,6 +39,9 @@ const Blog = ({ blog }) => {
                 <div className="card md:h-[500px] shadow-xl mt-5 md:mt-10" data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
+                {/* data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" */}
                     <figure><img className='md:h-[200px] md:w-[300px] relative ' src={image} alt="Shoes" /></figure>
                     <div className="flex justify-end absolute  md:right-10 top-72 md:top-0 "><IoBookmarks onClick={handleBookmark}></IoBookmarks></div>
                     <div className="card-body mt-10">

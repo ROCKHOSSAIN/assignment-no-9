@@ -12,6 +12,7 @@ import Register from "../Pages/Register/Register";
 import BlogCards from "../Pages/Blog/BlogCards";
 import Event from "../Pages/Blog/Event";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import PrivateRoute from "./PrivateRoute";
   
   const FairRoute = createBrowserRouter([
     {
@@ -29,21 +30,21 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
         },
         {
             path:'/blog',
-            element:<Event></Event>
+            element:<PrivateRoute><Event></Event></PrivateRoute>
         },
         {
             path:'/dashboard',
-            element:<Dashboard></Dashboard>
+            element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>
         },
         {
             path:'/blog/:id',
             loader:()=>fetch('/healthfairData.json'),
-            element:<BlogCards></BlogCards>
+            element:<PrivateRoute><BlogCards></BlogCards></PrivateRoute>
         },
         {
             path:'/favourite',
             loader:()=>fetch('/healthfairData.json'),
-            element:<Favourite></Favourite>
+            element:<PrivateRoute><Favourite></Favourite></PrivateRoute>
         },
         {
             path:'/login',

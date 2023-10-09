@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from '../../Components/Navbar/Navbar';
 import { ImGoogle } from "react-icons/im";
 import { useContext } from "react";
@@ -10,6 +10,9 @@ import swal from 'sweetalert';
 
 const Login = () => {
   const auth = getAuth(app);
+  const location = useLocation();
+  const navigate = useNavigate();
+  console.log('its your location',location)
     const [error,seterror]= useState(null)
     const {signIn,googleSignIn}= useContext(AuthContext)
     const handleLogin=e=>{
@@ -23,6 +26,7 @@ const Login = () => {
         signIn(email,password)
         .then(result=>{
         console.log(result.user)
+        navigate(location?.state?location.state:'/')
         })
         .catch(error=>{
             console.error(error)

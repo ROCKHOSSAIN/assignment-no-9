@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import { ImGithub, ImGoogle } from "react-icons/im";
@@ -8,10 +8,10 @@ import app from "../../Components/Firebase/firebase.config";
 import swal from 'sweetalert';
 import { HiEyeOff, HiEye } from "react-icons/hi";
 
-export const AuthContext2 = createContext(null)
+
 const Register = () => {
     const { createUser, googleSignIn } = useContext(AuthContext)
-
+    
     const [RegistrationError, setRegistrationError] = useState(null)
     const [showpassword, setshowpassword] = useState(false)
     const auth = getAuth(app);

@@ -2,20 +2,28 @@ import { useContext } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { AuthContext } from '../AuthContext/AuthProvider'
 const Navbar = () => {
-    const {user,logout} = useContext(AuthContext)
-    const handleSignOut=()=>{
+    const { user, logout } = useContext(AuthContext)
+    const handleSignOut = () => {
 
         logout()
-        .then()
-        .catch()
+            .then()
+            .catch()
     }
     const navlinks =
         <>
             <li className='font-Poppins'><NavLink to='/'>Home</NavLink> </li>
             <li className='font-Poppins'><NavLink to='/about'>About Us</NavLink> </li>
-            <li className='font-Poppins'><NavLink to='/blog'>Blog</NavLink> </li>
-            <li className='font-Poppins'><NavLink to='/favourite'>Bookmarks</NavLink> </li>
-            <li className='font-Poppins'><NavLink to='/dashboard'>Dashboard</NavLink> </li>
+            {
+                user &&
+                <>
+                    <li className='font-Poppins'><NavLink to='/blog'>Blog</NavLink> </li>
+                    <li className='font-Poppins'><NavLink to='/favourite'>Bookmarks</NavLink> </li>
+                    <li className='font-Poppins'><NavLink to='/dashboard'>Review</NavLink> </li>
+                </>
+            }
+            <li className='font-Poppins'><NavLink to='/contact'>Contact</NavLink> </li>
+
+
 
 
         </>
@@ -33,7 +41,7 @@ const Navbar = () => {
                                 {navlinks}
                             </ul>
                         </div>
-                        <img className='lg:w-1/3' src="../../../images/logo.png" alt="" />
+                        <img className='w-[160px] md:w-[220px]' src="../../../images/logo.png" alt="" />
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
@@ -43,27 +51,27 @@ const Navbar = () => {
                     <div className="navbar-end flex gap-4">
                         {
                             user ?
-                            <>
-                            <span>{user.displayName?user.displayName:'Md Alif Hossain Rocky'}</span>
-                            <span><img className='w-[40px]' src={user.photoURL?user.photoURL:'https://i.ibb.co/0VghLK3/2-2.jpg'} alt="" /></span>
-                
-                            <button onClick={handleSignOut} className="btn">Sign Out</button>
-                            </>
-                            :
-                            <Link to="/login">
-                            <button className="btn">Sign In</button>
-                            </Link>
+                                <>
+                                    <span className='text-xs md:text-base'>{user.displayName ? user.displayName : 'Md Alif Hossain Rocky'}</span>
+                                    <span><img className='w-[30px] md:w-[40px]' src={user.photoURL ? user.photoURL : 'https://i.ibb.co/0VghLK3/2-2.jpg'} alt="" /></span>
+
+                                    <button onClick={handleSignOut} className="bg-white text-black  md:p-2 ">Sign Out</button>
+                                </>
+                                :
+                                <Link to="/login">
+                                    <button className="btn">Sign In</button>
+                                </Link>
 
                         }
-                        
+
                         {/* <Link to="/register">
                             <button className="btn">Register</button>
                         </Link> */}
                     </div>
                 </div>
             </div>
-           
-               
+
+
 
         </div>
     );

@@ -1,8 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Website Name:
+Health Fairs Direct(HFD)
+Website Feature:
+1-this is a responsive website
+2-In this website people can know about latest events
+3-This website has an amazing UI/UX to design to attract users
+4-By login user can see the blogs,which seems to be attractive make it bookmarks and see the reviews of popular users from our partnerships
+5-In our website during events people can buy our different packages and

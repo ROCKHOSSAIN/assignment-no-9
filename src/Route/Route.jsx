@@ -13,6 +13,7 @@ import BlogCards from "../Pages/Blog/BlogCards";
 import Event from "../Pages/Blog/Event";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import PrivateRoute from "./PrivateRoute";
+import Contact from "../Pages/Contact/Contact";
   
   const FairRoute = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ import PrivateRoute from "./PrivateRoute";
         {
             path:'/about',
             element:<About></About>
+        },
+        {
+            path:'/contact',
+            element:<Contact></Contact>
         },
         {
             path:'/blog',

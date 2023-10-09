@@ -4,7 +4,6 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import FairRoute from './Route/Route.jsx'
 import AuthProvider from './Components/AuthContext/AuthProvider'
-import UserContext from './Pages/Dashboard/UserContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

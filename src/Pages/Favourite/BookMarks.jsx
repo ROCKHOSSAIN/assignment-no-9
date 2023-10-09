@@ -1,4 +1,3 @@
-import { Navbar } from "@material-tailwind/react";
 
 
 const BookMarks = ({ detail }) => {

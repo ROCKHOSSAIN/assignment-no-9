@@ -26,6 +26,7 @@ const Login = () => {
         signIn(email,password)
         .then(result=>{
         console.log(result.user)
+        swal("Welcome!", "User has been logged in successfully", "success");
         navigate(location?.state?location.state:'/')
         })
         .catch(error=>{
@@ -39,7 +40,7 @@ const Login = () => {
         googleSignIn()
         .then(result=>{
             console.log(result.user)
-            swal("Good job!", "User has been logged in successfully", "success");
+            swal("Welcome!", "User has been logged in successfully", "success");
 
         })
         .catch(error=>{

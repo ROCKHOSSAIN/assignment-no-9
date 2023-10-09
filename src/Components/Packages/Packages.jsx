@@ -6,7 +6,7 @@ const Packages = () => {
             <h1 className='text-6xl font-Poppins text-center mb-10'>Pac<span className='text-sky-500'>kages</span></h1>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-16'>
                 {/* 1st card */}
-                <div className="card w-full shadow-xl">
+                <div className="card w-full shadow-xl" data-aos="zoom-out-left"  data-aos-duration="1500">
                     <figure className='flex-col'>
                         <h1 className='text-xl font-Squada'>Silver Vitality</h1>
                         <br />
@@ -45,7 +45,7 @@ const Packages = () => {
                     </div>
                 </div>
                 {/* 2nd card  */}
-                <div className="card w-full shadow-xl">
+                <div className="card w-full shadow-xl" data-aos="zoom-out-up"  data-aos-duration="1500">
                     <figure className='flex-col'>
                         <h1 className='text-xl font-Squada'>Platinum Wellness</h1>
                         <br />
@@ -85,7 +85,7 @@ const Packages = () => {
                     </div>
                 </div>
                 {/* 3rd card  */}
-                <div className="card w-full shadow-xl">
+                <div className="card w-full shadow-xl" data-aos="zoom-out-right"  data-aos-duration="1500">
                     <figure className='flex-col'>
                         <h1 className='text-xl font-Squada'>Diamond Health</h1>
                         <br />

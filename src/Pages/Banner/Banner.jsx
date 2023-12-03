@@ -14,10 +14,7 @@ const Banner = () => {
                 </span>
             </div>
             <img className='absolute hidden md:block top-[610px] md:top-[726px] ' src="../../../images/wave.svg" alt="" />
-            {/* <div className='md: md:ml-52 text-white'>
-
-               
-            </div> */}
+            
         </div>
     );
 };

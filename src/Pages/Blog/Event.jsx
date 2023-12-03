@@ -5,7 +5,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 const Event = () => {
     const [blog, setblog] = useState([])
     useEffect(() => {
-        fetch('../../../public/healthfairData.json')
+        fetch('/healthfairData.json')
             .then(result => result.json())
             .then(data => setblog(data))
     }, [])
@@ -13,7 +13,7 @@ const Event = () => {
     return (<div className='mt-10 md:mt-32'>
 
         <h1 className='text-6xl text-center font-Poppins'>Latest events</h1>
-        <div className='mx-auto container grid grid-cols-1  md:grid-cols-3 items-center justify-center gap-10 mt-10 md:mt-32 overflow-x-hidden'>
+        <div className='mx-auto container grid grid-cols-1  md:grid-cols-3 items-center justify-center gap-10 mt-10 md:mt-32'>
 
 
             {
